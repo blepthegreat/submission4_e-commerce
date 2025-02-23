@@ -5,7 +5,7 @@ import seaborn as sns
 import os
 
 # Load Data
-@st.cache_data
+@st.cache_resource
 def load_data():
     BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ""))
     data_path = os.path.join(BASE_DIR, "data")
